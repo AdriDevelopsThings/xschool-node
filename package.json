@@ -1,0 +1,29 @@
+{
+  "name": "xschool",
+  "version": "1.0.2",
+  "description": "Get your xschool notes.",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdriDevelopsThings/xschool-node.git"
+  },
+  "homepage": "https://github.com/AdriDevelopsThings/xschool-node",
+  "author": "AdriDevelopsThings",
+  "types": "./@types/index.d.ts",
+  "license": "AGPL-3.0",
+  "private": false,
+  "type": "module",
+  "devDependencies": {
+    "@types/totp-generator": "^0.0.3",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "node-fetch": "^3.2.3",
+    "node-html-parser": "^5.3.3",
+    "totp-generator": "^0.0.13"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": ["dist/**/*", "@types/index.d.ts"]
+}
