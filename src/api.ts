@@ -78,8 +78,6 @@ export class Api {
     }
 
     async getMarks () {
-        if (!this.authenticated)
-            await this.login()
         const response = await fetch(this.endpoint + '/Marks/Parent', { headers: { cookie: this.cookie.parseToCookieHeader() }, redirect: 'manual' })
         if (response.status == 200) {
             const root = parse(await response.text())
