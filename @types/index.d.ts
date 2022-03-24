@@ -1,4 +1,5 @@
 type Mark = {
+    id: string,
     title: string,
     dateOfCorrection?: string,
     dateOfRating?: string,
@@ -6,17 +7,20 @@ type Mark = {
 }
 
 type Subject = {
+    id: string,
     title: string,
     marks: Mark[]
 }
 
 type Student = {
+    id: string,
     firstname: string,
     lastname: string,
     subjects: Subject[]
 }
 
 type Term = {
+    id: string,
     title: string,
     current: boolean
     students: Student[]
