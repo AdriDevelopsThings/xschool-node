@@ -1,6 +1,6 @@
 {
   "name": "xschool",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Get your xschool notes.",
   "main": "dist/index.js",
   "repository": {

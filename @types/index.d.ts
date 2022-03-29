@@ -34,3 +34,19 @@ export class XSchoolApi {
     async login(): Promise<void>
     getCookies(): { [key: string]: string }
 }
+
+export class XSchoolError extends Error {
+    step: string
+    message: string
+}
+
+export class ApiError extends XSchoolError {
+    public step: string
+    public url: string
+    public status: string | number
+    public content: string
+}
+
+export class NoCSRFTokenAvailable extends XSchoolError {
+    public url: string
+}
