@@ -39,7 +39,7 @@ Your school have a subdomain of xschool.de. For example: your-school.xschool.de.
 
 ### What does otpKey mean?
 
-xschool required 2 factor authentication via email or google authenticator. We want to use google authenticator here. You can enable google authenticator in the setting. xschool will give you a qr code and wants you to scan with google authenticator. You have to scan it with a other QR code scanner and get the raw string behind the qr code. The string is for example: `otpauth://totp/YOUR_USERNAME?secret=YOUR_SECRET&issuer=XSCHOOL`. Your `otpKey` is `YOUR_SECRET` in this url. Because xschool wants a verification otp code you have to scan the qr code with google authenticator now.
+Xschool requires 2 factor authentication via Email or Google Authenticator. We want to use Google Authenticator here. You can enable Google Authenticator in settings. Xschool will give you a QR code. You have to scan it with a other QR code scanner and get the raw string behind the QR code. The string will be for example: `otpauth://totp/YOUR_USERNAME?secret=YOUR_SECRET&issuer=XSCHOOL`. Your `otpKey` is `YOUR_SECRET` in this url. You can scan your QR code with Google Authenticator now. XSchool needs your generated otp code to verify the 2 factor registration.
 
 ## Better use
 When you make the first request the api have to authenticate you. The authentication details (Authorization codes) are saved in the cookies. If you save them the api doesn't have to make much requests again to authenticate you. Make it like that:
